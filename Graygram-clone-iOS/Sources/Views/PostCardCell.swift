@@ -201,7 +201,8 @@ class PostCardCell: UICollectionViewCell {
     
     Alamofire.request(urlString, method: .post, headers: headers).responseData { response in
       switch response.result {
-      case .success:
+      case .success,
+           .failure where response.response?.statusCode != 409:
         print("post-\(postID) 좋아요 성공!")
         
       case .failure:
