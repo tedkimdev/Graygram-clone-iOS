@@ -192,9 +192,11 @@ class PostCardCell: UICollectionViewCell {
       switch response.result {
       case .success:
         print("post-\(postID) 좋아요 성공!")
+        self.likeButton.isSelected = true
         
       case .failure:
         print("post-\(postID) 좋아요 실패 ㅠㅠ")
+        self.likeButton.isSelected = false
       }
     }
   }
