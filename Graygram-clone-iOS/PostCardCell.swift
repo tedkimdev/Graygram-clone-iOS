@@ -7,9 +7,6 @@
 //
 
 import UIKit
-import CGFloatLiteral
-import Kingfisher
-import ManualLayout
 
 class PostCardCell: UICollectionViewCell {
   
