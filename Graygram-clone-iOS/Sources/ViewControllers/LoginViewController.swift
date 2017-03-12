@@ -26,6 +26,7 @@ final class LoginViewController: UIViewController {
   // MARK: View Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.title = "Login"
     
     self.view.addSubview(self.usernameTextField)
     self.view.addSubview(self.passwordTextField)
