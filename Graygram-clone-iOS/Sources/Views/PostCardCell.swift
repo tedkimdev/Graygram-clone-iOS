@@ -71,6 +71,12 @@ class PostCardCell: UICollectionViewCell {
   func configure(post: Post) {
     self.backgroundColor = .lightGray
     
+    if let id = post.user.photoID, let url = URL(string: "https://graygram.com/photos/\(id)/40x40") {
+      self.userPhotoView.kf.setImage(with: url)
+    }
+    
+    self.usernameLabel.text = post.user.username
+    
     if let id = post.photoID,
       let url = URL(string:  "https://graygram.com/photos/\(id)/640x640") {
       self.photoView.kf.setImage(with: url)
