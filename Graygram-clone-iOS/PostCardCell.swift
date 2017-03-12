@@ -25,4 +25,10 @@ class PostCardCell: UICollectionViewCell {
     self.backgroundColor = .lightGray
     self.messageLabel.text = post.message
   }
+  
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    self.messageLabel.sizeToFit()
+  }
+  
 }
