@@ -21,6 +21,7 @@
 		BD0FA8021E755C51001C782E /* CollectionActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA8011E755C51001C782E /* CollectionActivityIndicatorView.swift */; };
 		BD0FA8041E756177001C782E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA8031E756177001C782E /* LoginViewController.swift */; };
 		BD0FA8071E75675B001C782E /* Response+ErrorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA8061E75675B001C782E /* Response+ErrorInfo.swift */; };
+		BD0FA8091E756B83001C782E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA8081E756B83001C782E /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		BD0FA8011E755C51001C782E /* CollectionActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionActivityIndicatorView.swift; sourceTree = "<group>"; };
 		BD0FA8031E756177001C782E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD0FA8061E75675B001C782E /* Response+ErrorInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ErrorInfo.swift"; sourceTree = "<group>"; };
+		BD0FA8081E756B83001C782E /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		D26E671987A3E4B4CFE8800A /* Pods-Graygram-clone-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graygram-clone-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Graygram-clone-iOS/Pods-Graygram-clone-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E5134AD788F01C15C39A71A6 /* Pods-Graygram-clone-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graygram-clone-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Graygram-clone-iOS/Pods-Graygram-clone-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 			children = (
 				BD0FA7E91E753F39001C782E /* FeedViewController.swift */,
 				BD0FA8031E756177001C782E /* LoginViewController.swift */,
+				BD0FA8081E756B83001C782E /* SplashViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				BD0FA7FE1E754600001C782E /* PhotoSize.swift in Sources */,
 				BD0FA8021E755C51001C782E /* CollectionActivityIndicatorView.swift in Sources */,
 				BD0FA7F01E753F39001C782E /* AppDelegate.swift in Sources */,
+				BD0FA8091E756B83001C782E /* SplashViewController.swift in Sources */,
 				BD0FA7F41E753F39001C782E /* PostCardCell.swift in Sources */,
 				BD0FA8001E75476E001C782E /* UIImageView+Photo.swift in Sources */,
 				BD0FA7FB1E75418B001C782E /* User.swift in Sources */,
