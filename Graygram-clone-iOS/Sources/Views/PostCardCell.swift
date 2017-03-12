@@ -234,7 +234,7 @@ class PostCardCell: UICollectionViewCell {
     let headers: HTTPHeaders = [
       "Accept": "application/json"
     ]
-    Alamofire.request(urlString, method: .post, headers: headers)
+    Alamofire.request(urlString, method: .delete, headers: headers)
       .validate(statusCode: 200..<400)
       .responseData { response in
         switch response.result {
