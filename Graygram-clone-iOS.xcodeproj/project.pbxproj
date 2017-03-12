@@ -12,6 +12,7 @@
 		BD0FA7C91E751F84001C782E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7C81E751F84001C782E /* FeedViewController.swift */; };
 		BD0FA7CE1E751F84001C782E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0FA7CD1E751F84001C782E /* Assets.xcassets */; };
 		BD0FA7D11E751F84001C782E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0FA7CF1E751F84001C782E /* LaunchScreen.storyboard */; };
+		BD0FA7D91E7525B9001C782E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7D81E7525B9001C782E /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BD0FA7CD1E751F84001C782E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD0FA7D01E751F84001C782E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD0FA7D21E751F84001C782E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD0FA7D81E7525B9001C782E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D26E671987A3E4B4CFE8800A /* Pods-Graygram-clone-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graygram-clone-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Graygram-clone-iOS/Pods-Graygram-clone-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E5134AD788F01C15C39A71A6 /* Pods-Graygram-clone-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graygram-clone-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Graygram-clone-iOS/Pods-Graygram-clone-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 				BD0FA7CD1E751F84001C782E /* Assets.xcassets */,
 				BD0FA7CF1E751F84001C782E /* LaunchScreen.storyboard */,
 				BD0FA7D21E751F84001C782E /* Info.plist */,
+				BD0FA7D81E7525B9001C782E /* Post.swift */,
 			);
 			path = "Graygram-clone-iOS";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0FA7D91E7525B9001C782E /* Post.swift in Sources */,
 				BD0FA7C91E751F84001C782E /* FeedViewController.swift in Sources */,
 				BD0FA7C71E751F84001C782E /* AppDelegate.swift in Sources */,
 			);
