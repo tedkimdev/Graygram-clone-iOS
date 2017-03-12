@@ -20,6 +20,7 @@ class PostCardCell: UICollectionViewCell {
     
     self.photoView.backgroundColor = .gray
     self.messageLabel.numberOfLines = 3
+    self.messageLabel.font = UIFont.systemFont(ofSize: 14)
     
     self.contentView.addSubview(self.photoView)
     self.contentView.addSubview(self.messageLabel)
@@ -39,6 +40,10 @@ class PostCardCell: UICollectionViewCell {
     
     self.messageLabel.text = post.message
     self.setNeedsLayout()
+  }
+  
+  class func size(width: CGFloat, post: Post) -> CGSize {
+    return CGSize(width: width, height: width + 100)
   }
   
   override func layoutSubviews() {
