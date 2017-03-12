@@ -66,6 +66,10 @@ extension MainTabBarController: UITabBarControllerDelegate {
 
 extension MainTabBarController: UIImagePickerControllerDelegate {
   
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    print("\(info)")
+  }
+  
 }
 
 
