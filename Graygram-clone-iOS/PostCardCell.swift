@@ -18,4 +18,8 @@ class PostCardCell: UICollectionViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
+  func configure(post: Post) {
+    self.backgroundColor = .lightGray
+    print(post)
+  }
 }
