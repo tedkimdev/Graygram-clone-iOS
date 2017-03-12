@@ -53,6 +53,10 @@ class PostCardCell: UICollectionViewCell {
     $0.numberOfLines = Constant.messageLabelNumberOfLines
     $0.font = Font.messageLabel
   }
+  fileprivate let likeButton = UIButton().then {
+    $0.setBackgroundImage(#imageLiteral(resourceName: "icon-like"), for: .normal)
+    $0.setBackgroundImage(#imageLiteral(resourceName: "icon-like-selected"), for: .normal)
+  }
   
   
   // MARK: Initializing
@@ -63,6 +67,7 @@ class PostCardCell: UICollectionViewCell {
     self.contentView.addSubview(self.usernameLabel)
     self.contentView.addSubview(self.photoView)
     self.contentView.addSubview(self.messageLabel)
+    self.contentView.addSubview(self.likeButton)
   }
   
   required init?(coder aDecoder: NSCoder) {
