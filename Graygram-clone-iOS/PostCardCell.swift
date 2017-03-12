@@ -7,10 +7,18 @@
 //
 
 import UIKit
+import CGFloatLiteral
 import Kingfisher
 import ManualLayout
 
 class PostCardCell: UICollectionViewCell {
+  
+  fileprivate struct Metric {
+    static let messageLabelTop = 10.f
+    static let messageLabelLeft = 10.f
+    static let messageLabelRight = 10.f
+    static let messageLabelBottom = 10.f
+  }
   
   fileprivate let photoView = UIImageView()
   fileprivate let messageLabel = UILabel()
@@ -48,10 +56,11 @@ class PostCardCell: UICollectionViewCell {
     
     if let message = post.message, !message.isEmpty {
       let font = UIFont.systemFont(ofSize: 14)
-      let messageLabelSize = message.size(width: width - 20, font: font, numberOfLines: 3)
-      height += 10  // messageLabel top
+      let messagelLabelWidth = width - Metric.messageLabelLeft - Metric.messageLabelRight
+      let messageLabelSize = message.size(width: messagelLabelWidth, font: font, numberOfLines: 3)
+      height += Metric.messageLabelTop
       height += messageLabelSize.height // messageLabel height
-      height += 10  // messageLabel bottom
+      height += Metric.messageLabelBottom
     }
     
     return CGSize(width: width, height: height)
@@ -63,9 +72,9 @@ class PostCardCell: UICollectionViewCell {
     self.photoView.width = self.contentView.width
     self.photoView.height = self.photoView.width
     
-    self.messageLabel.top = self.photoView.bottom + 10
-    self.messageLabel.left = 10
-    self.messageLabel.width = self.contentView.width - 20
+    self.messageLabel.top = self.photoView.bottom + Metric.messageLabelTop
+    self.messageLabel.left = Metric.messageLabelLeft
+    self.messageLabel.width = self.contentView.width - Metric.messageLabelLeft - Metric.messageLabelRight
     self.messageLabel.sizeToFit()
   }
   
