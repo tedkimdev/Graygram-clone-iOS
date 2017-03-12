@@ -20,6 +20,7 @@ class FeedViewController: UIViewController {
     self.collectionView.backgroundColor = .white
     self.collectionView.frame = self.view.bounds
     self.collectionView.dataSource = self
+    self.collectionView.delegate = self
     self.collectionView.register(PostCardCell.self, forCellWithReuseIdentifier: "cardCell")
     self.view.addSubview(self.collectionView)
     self.fetchPost()
@@ -59,4 +60,14 @@ extension FeedViewController: UICollectionViewDataSource {
     return cell
   }
   
+}
+
+
+// MARK: - UICollectionViewDelegateFlowLayout
+
+extension FeedViewController: UICollectionViewDelegateFlowLayout {
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    let cellWidth = collectionView.frame.width
+    return CGSize(width: cellWidth, height: cellWidth)  // 일단 정사각형
+  }
 }
