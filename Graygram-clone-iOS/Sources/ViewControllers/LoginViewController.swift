@@ -39,6 +39,8 @@ final class LoginViewController: UIViewController {
     super.viewDidLoad()
     self.title = "Login"
     
+    self.usernameTextField.addTarget(self, action: #selector(textFieldDidChangeText), for: .editingChanged)
+    self.passwordTextField.addTarget(self, action: #selector(textFieldDidChangeText), for: .editingChanged)
       
     self.loginButton.addTarget(self, action: #selector(loginButtonDidTap), for: .touchUpInside)
     
@@ -67,6 +69,10 @@ final class LoginViewController: UIViewController {
   
   
   // MARK: Actions
+  
+  func textFieldDidChangeText(_ textField: UITextField) {
+    textField.backgroundColor = .white
+  }
   
   func loginButtonDidTap() {
     guard let username = self.usernameTextField.text, !username.isEmpty else { return }
