@@ -14,7 +14,7 @@ extension String {
     let maximumHeight = numberOfLines == 0
       ? CGFloat.greatestFiniteMagnitude
       : font.lineHeight * CGFloat(numberOfLines)
-    let constraintSize = CGSize(width: width - 20, height: maximumHeight * 3)
+    let constraintSize = CGSize(width: width - 20, height: maximumHeight)
     let options: NSStringDrawingOptions = [.usesFontLeading, .usesLineFragmentOrigin]
     let attributes: [String: Any] = [NSFontAttributeName: font]
     let boundingRect = self.boundingRect(
