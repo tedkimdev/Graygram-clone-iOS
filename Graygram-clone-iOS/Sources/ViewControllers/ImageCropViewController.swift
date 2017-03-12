@@ -27,6 +27,7 @@ final class ImageCropViewController: UIViewController {
   init(image: UIImage) {
     self.originalImage = image
     super.init(nibName: nil, bundle: nil)
+    self.imageView.image = image
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -44,6 +45,14 @@ final class ImageCropViewController: UIViewController {
     
     self.scrollView.snp.makeConstraints { make in
       make.edges.equalToSuperview()
+    }
+    
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    if self.imageView.size == .zero {
+      self.imageView.size = self.scrollView.size
     }
   }
   
