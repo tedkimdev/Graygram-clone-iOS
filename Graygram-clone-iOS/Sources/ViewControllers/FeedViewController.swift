@@ -32,6 +32,8 @@ final class FeedViewController: UIViewController {
     self.collectionView.frame = self.view.bounds
     self.collectionView.dataSource = self
     self.collectionView.delegate = self
+      
+    self.refreshControl.addTarget(self, action: #selector(self.refreshControlDidChangeValue), for: .valueChanged)
     
     self.collectionView.addSubview(self.refreshControl)
     self.view.addSubview(self.collectionView)
@@ -56,6 +58,13 @@ final class FeedViewController: UIViewController {
     }
   }
 
+  
+  // MARK: Actions
+  
+  func refreshControlDidChangeValue() {
+    print("will start refresing")
+  }
+  
 }
 
 
