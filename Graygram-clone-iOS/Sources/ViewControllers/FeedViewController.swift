@@ -37,13 +37,13 @@ final class FeedViewController: UIViewController {
     
     self.collectionView.addSubview(self.refreshControl)
     self.view.addSubview(self.collectionView)
-    self.fetchPost()
+    self.fetchPosts()
   }
   
   
   // MARK: Networking
   
-  fileprivate func fetchPost() {
+  fileprivate func fetchPosts() {
     Alamofire.request("https://api.graygram.com/feed").responseJSON { response in
       switch response.result {
       case .success(let value):
@@ -62,7 +62,7 @@ final class FeedViewController: UIViewController {
   // MARK: Actions
   
   func refreshControlDidChangeValue() {
-    print("will start refresing")
+    self.fetchPosts()
   }
   
 }
