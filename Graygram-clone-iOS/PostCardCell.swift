@@ -59,7 +59,7 @@ class PostCardCell: UICollectionViewCell {
         context: nil
       )
       height += 10  // messageLabel top
-      height += boundingRect.height // messageLabel height
+      height += ceil(boundingRect.height) // messageLabel height
       height += 10  // messageLabel bottom
     }
     
