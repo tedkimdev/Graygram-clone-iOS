@@ -18,6 +18,7 @@ class FeedViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.collectionView.frame = self.view.bounds
+    self.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cardCell")
     self.view.addSubview(self.collectionView)
     self.fetchPost()
   }
@@ -40,3 +41,18 @@ class FeedViewController: UIViewController {
 
 }
 
+
+// MARK: - UICollectionViewDataSource
+
+extension FeedViewController: UICollectionViewDataSource {
+  
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return self.posts.count
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cardCell", for: indexPath)
+    return cell
+  }
+  
+}
