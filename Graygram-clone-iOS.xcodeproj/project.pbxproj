@@ -10,7 +10,6 @@
 		77851316EE1ACD40E50C8FD8 /* Pods_Graygram_clone_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6732A765E0701662B87840F4 /* Pods_Graygram_clone_iOS.framework */; };
 		BD0FA7C71E751F84001C782E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7C61E751F84001C782E /* AppDelegate.swift */; };
 		BD0FA7C91E751F84001C782E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7C81E751F84001C782E /* ViewController.swift */; };
-		BD0FA7CC1E751F84001C782E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0FA7CA1E751F84001C782E /* Main.storyboard */; };
 		BD0FA7CE1E751F84001C782E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0FA7CD1E751F84001C782E /* Assets.xcassets */; };
 		BD0FA7D11E751F84001C782E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0FA7CF1E751F84001C782E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		BD0FA7C31E751F84001C782E /* Graygram-clone-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Graygram-clone-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0FA7C61E751F84001C782E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD0FA7C81E751F84001C782E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BD0FA7CB1E751F84001C782E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD0FA7CD1E751F84001C782E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD0FA7D01E751F84001C782E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD0FA7D21E751F84001C782E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 			children = (
 				BD0FA7C61E751F84001C782E /* AppDelegate.swift */,
 				BD0FA7C81E751F84001C782E /* ViewController.swift */,
-				BD0FA7CA1E751F84001C782E /* Main.storyboard */,
 				BD0FA7CD1E751F84001C782E /* Assets.xcassets */,
 				BD0FA7CF1E751F84001C782E /* LaunchScreen.storyboard */,
 				BD0FA7D21E751F84001C782E /* Info.plist */,
@@ -152,7 +149,6 @@
 			files = (
 				BD0FA7D11E751F84001C782E /* LaunchScreen.storyboard in Resources */,
 				BD0FA7CE1E751F84001C782E /* Assets.xcassets in Resources */,
-				BD0FA7CC1E751F84001C782E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BD0FA7CA1E751F84001C782E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD0FA7CB1E751F84001C782E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD0FA7CF1E751F84001C782E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -374,6 +362,7 @@
 				BD0FA7D71E751F84001C782E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
