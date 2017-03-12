@@ -188,11 +188,13 @@ class PostCardCell: UICollectionViewCell {
   // MARK: Networking
   
   func like() {
-    guard let post = self.post, let postID = post.id else { return }
+    guard let postID = self.post?.id else { return }
     
-    self.likeButton.isSelected = true
-    self.post?.likeCount = post.likeCount + 1
-    self.configureLikeCountLabel()
+    NotificationCenter.default.post(
+      name: .postDidLike,
+      object: self,
+      userInfo: ["postID": postID]
+    )
     
     let urlString = "https://api.graygram.com/posts/\(postID)"
     let headers: HTTPHeaders = [
@@ -207,18 +209,24 @@ class PostCardCell: UICollectionViewCell {
         
       case .failure:
         print("post-\(postID) 좋아요 실패 ㅠㅠ")
-        self.likeButton.isSelected = false
-        self.post?.likeCount = post.likeCount
-        self.configureLikeCountLabel()
+        
+        NotificationCenter.default.post(
+          name: .postDidUnlike,
+          object: self,
+          userInfo: ["postID": postID]
+        )
       }
     }
   }
   
   func unlike() {
     guard let post = self.post, let postID = post.id else { return }
-    self.likeButton.isSelected = false
-    self.post?.likeCount = max(0, post.likeCount - 1)
-    self.configureLikeCountLabel()
+    
+    NotificationCenter.default.post(
+      name: .postDidUnlike,
+      object: self,
+      userInfo: ["postID": postID]
+    )
     
     let urlString = "https://api.graygram.com/posts/\(postID)"
     let headers: HTTPHeaders = [
@@ -232,9 +240,11 @@ class PostCardCell: UICollectionViewCell {
     
       case .failure:
         print("post-\(postID) 좋아요 취소 실패 ㅠㅠ")
-        self.likeButton.isSelected = true
-        self.post?.likeCount = post.likeCount
-        self.configureLikeCountLabel()
+        NotificationCenter.default.post(
+          name: .postDidLike,
+          object: self,
+          userInfo: ["postID": postID]
+        )
       }
     }
   }
