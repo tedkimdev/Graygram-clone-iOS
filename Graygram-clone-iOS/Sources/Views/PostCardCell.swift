@@ -188,6 +188,12 @@ class PostCardCell: UICollectionViewCell {
   // MARK: Actions
   func likeButtonDidTap() {
     guard let postID = self.post?.id else { return }
+    let oldLikeCount = self.post?.likeCount
+    
+    self.likeButton.isSelected = true
+    self.post?.likeCount? += 1
+    self.configureLikeCountLabel()
+    
     let urlString = "https://api.graygram.com/posts/\(postID)"
     let headers: HTTPHeaders = [
       "Accept": "application/json"
@@ -197,13 +203,12 @@ class PostCardCell: UICollectionViewCell {
       switch response.result {
       case .success:
         print("post-\(postID) 좋아요 성공!")
-        self.likeButton.isSelected = true
-        self.post?.likeCount? += 1
-        self.configureLikeCountLabel()
         
       case .failure:
         print("post-\(postID) 좋아요 실패 ㅠㅠ")
         self.likeButton.isSelected = false
+        self.post?.likeCount = oldLikeCount
+        self.configureLikeCountLabel()
       }
     }
   }
