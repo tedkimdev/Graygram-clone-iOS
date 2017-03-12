@@ -47,7 +47,9 @@ class PostCardCell: UICollectionViewCell {
     self.photoView.width = self.contentView.width
     self.photoView.height = self.photoView.width
     
-    self.messageLabel.width = self.contentView.width
+    self.messageLabel.top = self.photoView.bottom + 10
+    self.messageLabel.left = 10
+    self.messageLabel.width = self.contentView.width - 20
     self.messageLabel.sizeToFit()
   }
   
