@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
+  
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
@@ -20,7 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window.backgroundColor = .white
     window.makeKeyAndVisible()
     
-    window.rootViewController = FeedViewController()
+    let feedViewController = FeedViewController()
+    let navigationController = UINavigationController(rootViewController: feedViewController)
+    window.rootViewController = navigationController
     
     self.window = window
     
