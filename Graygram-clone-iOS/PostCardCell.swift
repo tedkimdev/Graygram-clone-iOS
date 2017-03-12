@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import ManualLayout
 
 class PostCardCell: UICollectionViewCell {
   
@@ -43,10 +44,10 @@ class PostCardCell: UICollectionViewCell {
   override func layoutSubviews() {
     super.layoutSubviews()
     
-    self.photoView.frame.size.width = self.contentView.frame.width
-    self.photoView.frame.size.height = self.photoView.frame.size.width
+    self.photoView.width = self.contentView.width
+    self.photoView.height = self.photoView.width
     
-    self.messageLabel.frame.size.width = self.contentView.frame.width
+    self.messageLabel.width = self.contentView.width
     self.messageLabel.sizeToFit()
   }
   
