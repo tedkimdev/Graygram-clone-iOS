@@ -12,6 +12,8 @@ import Kingfisher
 import ManualLayout
 
 class PostCardCell: UICollectionViewCell {
+  
+  // MARK: Constants
 
   fileprivate struct Constant {
     static let messageLabelNumberOfLines = 3
@@ -28,8 +30,14 @@ class PostCardCell: UICollectionViewCell {
     static let messageLabel = UIFont.systemFont(ofSize: 14)
   }
   
+  
+  // MARK: UI
+  
   fileprivate let photoView = UIImageView()
   fileprivate let messageLabel = UILabel()
+  
+  
+  // MARK: Initializing
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -46,6 +54,9 @@ class PostCardCell: UICollectionViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
+  
+  // MARK: Configuring
+  
   func configure(post: Post) {
     self.backgroundColor = .lightGray
     
@@ -57,6 +68,9 @@ class PostCardCell: UICollectionViewCell {
     self.messageLabel.text = post.message
     self.setNeedsLayout()
   }
+  
+  
+  // MARK: Size
   
   class func size(width: CGFloat, post: Post) -> CGSize {
     var height: CGFloat = 0
@@ -76,6 +90,9 @@ class PostCardCell: UICollectionViewCell {
     
     return CGSize(width: width, height: height)
   }
+  
+  
+  // MARK: Layout
   
   override func layoutSubviews() {
     super.layoutSubviews()
