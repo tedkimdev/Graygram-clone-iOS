@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Alamofire
+
 class PostCardCell: UICollectionViewCell {
   
   // MARK: Constants
@@ -43,6 +45,11 @@ class PostCardCell: UICollectionViewCell {
   }
   
   
+  // MARK: Properties
+  
+  fileprivate var post: Post?
+  
+  
   // MARK: UI
   
   fileprivate let userPhotoView = UIImageView().then {
@@ -72,6 +79,9 @@ class PostCardCell: UICollectionViewCell {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
+    
+    self.likeButton.addTarget(self, action: #selector(likeButtonDidTap), for: .touchUpInside)
+    
     self.contentView.addSubview(self.userPhotoView)
     self.contentView.addSubview(self.usernameLabel)
     self.contentView.addSubview(self.photoView)
@@ -88,6 +98,7 @@ class PostCardCell: UICollectionViewCell {
   // MARK: Configuring
   
   func configure(post: Post) {
+    self.post = post
     self.userPhotoView.setImage(with: post.user.photoID, size: .tiny)
     self.usernameLabel.text = post.user.username
     self.photoView.setImage(with: post.photoID, size: .hd)
@@ -165,6 +176,26 @@ class PostCardCell: UICollectionViewCell {
       self.messageLabel.left = Metric.messageLabelLeft
       self.messageLabel.width = self.contentView.width - Metric.messageLabelLeft - Metric.messageLabelRight
       self.messageLabel.sizeToFit()
+    }
+  }
+  
+  
+  // MARK: Actions
+  func likeButtonDidTap() {
+    guard let postID = self.post?.id else { return }
+    let urlString = "https://api.graygram.com/posts/\(postID)"
+    let headers: HTTPHeaders = [
+      "Accept": "application/json"
+    ]
+    
+    Alamofire.request(urlString, method: .post, headers: headers).responseData { response in
+      switch response.result {
+      case .success:
+        print("post-\(postID) 좋아요 성공!")
+        
+      case .failure:
+        print("post-\(postID) 좋아요 실패 ㅠㅠ")
+      }
     }
   }
   
