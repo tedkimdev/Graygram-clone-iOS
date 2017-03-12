@@ -12,6 +12,10 @@ import Kingfisher
 import ManualLayout
 
 class PostCardCell: UICollectionViewCell {
+
+  fileprivate struct Constant {
+    static let messageLabelNumberOfLines = 3
+  }
   
   fileprivate struct Metric {
     static let messageLabelTop = 10.f
@@ -27,7 +31,7 @@ class PostCardCell: UICollectionViewCell {
     super.init(frame: frame)
     
     self.photoView.backgroundColor = .gray
-    self.messageLabel.numberOfLines = 3
+    self.messageLabel.numberOfLines = Constant.messageLabelNumberOfLines
     self.messageLabel.font = UIFont.systemFont(ofSize: 14)
     
     self.contentView.addSubview(self.photoView)
@@ -56,8 +60,11 @@ class PostCardCell: UICollectionViewCell {
     
     if let message = post.message, !message.isEmpty {
       let font = UIFont.systemFont(ofSize: 14)
-      let messagelLabelWidth = width - Metric.messageLabelLeft - Metric.messageLabelRight
-      let messageLabelSize = message.size(width: messagelLabelWidth, font: font, numberOfLines: 3)
+      let messageLabelSize = message.size(
+        width: width - Metric.messageLabelLeft - Metric.messageLabelRight,
+        font: font,
+        numberOfLines: Constant.messageLabelNumberOfLines
+      )
       height += Metric.messageLabelTop
       height += messageLabelSize.height // messageLabel height
       height += Metric.messageLabelBottom
