@@ -8,26 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		77851316EE1ACD40E50C8FD8 /* Pods_Graygram_clone_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6732A765E0701662B87840F4 /* Pods_Graygram_clone_iOS.framework */; };
-		BD0FA7C71E751F84001C782E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7C61E751F84001C782E /* AppDelegate.swift */; };
-		BD0FA7C91E751F84001C782E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7C81E751F84001C782E /* FeedViewController.swift */; };
-		BD0FA7CE1E751F84001C782E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0FA7CD1E751F84001C782E /* Assets.xcassets */; };
-		BD0FA7D11E751F84001C782E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0FA7CF1E751F84001C782E /* LaunchScreen.storyboard */; };
-		BD0FA7D91E7525B9001C782E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7D81E7525B9001C782E /* Post.swift */; };
-		BD0FA7DB1E752B8F001C782E /* PostCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7DA1E752B8F001C782E /* PostCardCell.swift */; };
-		BD0FA7DD1E753739001C782E /* String+BoundingRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7DC1E753739001C782E /* String+BoundingRect.swift */; };
+		BD0FA7EE1E753F39001C782E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0FA7DF1E753F39001C782E /* Assets.xcassets */; };
+		BD0FA7EF1E753F39001C782E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0FA7E01E753F39001C782E /* LaunchScreen.storyboard */; };
+		BD0FA7F01E753F39001C782E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7E31E753F39001C782E /* AppDelegate.swift */; };
+		BD0FA7F11E753F39001C782E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7E51E753F39001C782E /* Post.swift */; };
+		BD0FA7F21E753F39001C782E /* String+BoundingRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7E71E753F39001C782E /* String+BoundingRect.swift */; };
+		BD0FA7F31E753F39001C782E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7E91E753F39001C782E /* FeedViewController.swift */; };
+		BD0FA7F41E753F39001C782E /* PostCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA7EB1E753F39001C782E /* PostCardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6732A765E0701662B87840F4 /* Pods_Graygram_clone_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Graygram_clone_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0FA7C31E751F84001C782E /* Graygram-clone-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Graygram-clone-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD0FA7C61E751F84001C782E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD0FA7C81E751F84001C782E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		BD0FA7CD1E751F84001C782E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BD0FA7D01E751F84001C782E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BD0FA7D21E751F84001C782E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD0FA7D81E7525B9001C782E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		BD0FA7DA1E752B8F001C782E /* PostCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCardCell.swift; sourceTree = "<group>"; };
-		BD0FA7DC1E753739001C782E /* String+BoundingRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+BoundingRect.swift"; sourceTree = "<group>"; };
+		BD0FA7DF1E753F39001C782E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD0FA7E11E753F39001C782E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD0FA7E31E753F39001C782E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD0FA7E51E753F39001C782E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		BD0FA7E71E753F39001C782E /* String+BoundingRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+BoundingRect.swift"; sourceTree = "<group>"; };
+		BD0FA7E91E753F39001C782E /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		BD0FA7EB1E753F39001C782E /* PostCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCardCell.swift; sourceTree = "<group>"; };
+		BD0FA7ED1E753F39001C782E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D26E671987A3E4B4CFE8800A /* Pods-Graygram-clone-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graygram-clone-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Graygram-clone-iOS/Pods-Graygram-clone-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E5134AD788F01C15C39A71A6 /* Pods-Graygram-clone-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graygram-clone-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Graygram-clone-iOS/Pods-Graygram-clone-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,16 +73,72 @@
 		BD0FA7C51E751F84001C782E /* Graygram-clone-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				BD0FA7C61E751F84001C782E /* AppDelegate.swift */,
-				BD0FA7C81E751F84001C782E /* FeedViewController.swift */,
-				BD0FA7DA1E752B8F001C782E /* PostCardCell.swift */,
-				BD0FA7CD1E751F84001C782E /* Assets.xcassets */,
-				BD0FA7CF1E751F84001C782E /* LaunchScreen.storyboard */,
-				BD0FA7D21E751F84001C782E /* Info.plist */,
-				BD0FA7D81E7525B9001C782E /* Post.swift */,
-				BD0FA7DC1E753739001C782E /* String+BoundingRect.swift */,
+				BD0FA7E21E753F39001C782E /* Sources */,
+				BD0FA7DE1E753F39001C782E /* Resources */,
+				BD0FA7EC1E753F39001C782E /* Supporting Files */,
 			);
 			path = "Graygram-clone-iOS";
+			sourceTree = "<group>";
+		};
+		BD0FA7DE1E753F39001C782E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD0FA7DF1E753F39001C782E /* Assets.xcassets */,
+				BD0FA7E01E753F39001C782E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BD0FA7E21E753F39001C782E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BD0FA7E31E753F39001C782E /* AppDelegate.swift */,
+				BD0FA7EA1E753F39001C782E /* Views */,
+				BD0FA7E41E753F39001C782E /* Models */,
+				BD0FA7E81E753F39001C782E /* ViewControllers */,
+				BD0FA7E61E753F39001C782E /* Utils */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BD0FA7E41E753F39001C782E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD0FA7E51E753F39001C782E /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD0FA7E61E753F39001C782E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BD0FA7E71E753F39001C782E /* String+BoundingRect.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BD0FA7E81E753F39001C782E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD0FA7E91E753F39001C782E /* FeedViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BD0FA7EA1E753F39001C782E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD0FA7EB1E753F39001C782E /* PostCardCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD0FA7EC1E753F39001C782E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD0FA7ED1E753F39001C782E /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		FDDE86D1DBB1A2A0287B4456 /* Pods */ = {
@@ -156,8 +212,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD0FA7D11E751F84001C782E /* LaunchScreen.storyboard in Resources */,
-				BD0FA7CE1E751F84001C782E /* Assets.xcassets in Resources */,
+				BD0FA7EE1E753F39001C782E /* Assets.xcassets in Resources */,
+				BD0FA7EF1E753F39001C782E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,21 +272,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD0FA7D91E7525B9001C782E /* Post.swift in Sources */,
-				BD0FA7DB1E752B8F001C782E /* PostCardCell.swift in Sources */,
-				BD0FA7DD1E753739001C782E /* String+BoundingRect.swift in Sources */,
-				BD0FA7C91E751F84001C782E /* FeedViewController.swift in Sources */,
-				BD0FA7C71E751F84001C782E /* AppDelegate.swift in Sources */,
+				BD0FA7F01E753F39001C782E /* AppDelegate.swift in Sources */,
+				BD0FA7F41E753F39001C782E /* PostCardCell.swift in Sources */,
+				BD0FA7F21E753F39001C782E /* String+BoundingRect.swift in Sources */,
+				BD0FA7F31E753F39001C782E /* FeedViewController.swift in Sources */,
+				BD0FA7F11E753F39001C782E /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BD0FA7CF1E751F84001C782E /* LaunchScreen.storyboard */ = {
+		BD0FA7E01E753F39001C782E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BD0FA7D01E751F84001C782E /* Base */,
+				BD0FA7E11E753F39001C782E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -334,7 +390,7 @@
 			baseConfigurationReference = E5134AD788F01C15C39A71A6 /* Pods-Graygram-clone-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Graygram-clone-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Graygram-clone-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aney.Graygram-clone-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -347,7 +403,7 @@
 			baseConfigurationReference = D26E671987A3E4B4CFE8800A /* Pods-Graygram-clone-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Graygram-clone-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Graygram-clone-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aney.Graygram-clone-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
