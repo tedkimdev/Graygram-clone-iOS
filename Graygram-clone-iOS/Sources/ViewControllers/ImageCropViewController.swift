@@ -49,6 +49,12 @@ final class ImageCropViewController: UIViewController {
     self.originalImage = image
     super.init(nibName: nil, bundle: nil)
     self.title = "Crop"
+    self.navigationItem.leftBarButtonItem = UIBarButtonItem(
+      barButtonSystemItem: .cancel,
+      target: self,
+      action: #selector(cancelButtonDidTap)
+    )
+    
     self.automaticallyAdjustsScrollViewInsets = false
     self.imageView.image = image
   }
@@ -129,4 +135,10 @@ final class ImageCropViewController: UIViewController {
     self.scrollView.setContentOffset(targetContentOffset, animated: animated)
   }
   
+  
+  // MARK: Actions
+  
+  func cancelButtonDidTap() {
+    _ = self.navigationController?.popViewController(animated: true)
+  }
 }
