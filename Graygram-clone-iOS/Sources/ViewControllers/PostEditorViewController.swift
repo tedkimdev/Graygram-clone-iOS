@@ -20,6 +20,7 @@ final class PostEditorViewController: UIViewController {
   // MARK: UI
   
   fileprivate let tableView = UITableView(frame: .zero, style: .grouped)
+  fileprivate let progressView = UIProgressView()
   
   
   // MARK: Initializing
@@ -57,10 +58,19 @@ final class PostEditorViewController: UIViewController {
     self.tableView.register(PostEditorMessageCell.self, forCellReuseIdentifier: "messageCell")
     self.tableView.dataSource = self
     self.tableView.delegate = self
+    
+    self.progressView.isHidden = true
+    
     self.view.addSubview(self.tableView)
+    self.view.addSubview(self.progressView)
     
     self.tableView.snp.makeConstraints { make in
       make.edges.equalToSuperview()
+    }
+    
+    self.progressView.snp.makeConstraints { make in
+      make.top.equalTo(self.topLayoutGuide.snp.bottom)
+      make.left.right.equalToSuperview()
     }
     
     NotificationCenter.default.addObserver(
