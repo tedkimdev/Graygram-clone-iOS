@@ -26,6 +26,7 @@ final class PostEditorMessageCell: UITableViewCell {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     self.selectionStyle = .none
     self.textView.font = Font.textView
+    self.textView.delegate = self
     self.contentView.addSubview(self.textView)
   }
   
@@ -56,6 +57,17 @@ final class PostEditorMessageCell: UITableViewCell {
   override func layoutSubviews() {
     super.layoutSubviews()
     self.textView.frame = self.contentView.bounds
+  }
+  
+}
+
+
+// MARK: - UITextViewDelegate
+
+extension PostEditorMessageCell: UITextViewDelegate {
+  
+  func textViewDidChange(_ textView: UITextView) {
+    print(textView)
   }
   
 }
