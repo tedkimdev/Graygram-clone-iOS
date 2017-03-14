@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PostEditorViewController: UIViewController {
+final class PostEditorViewController: UIViewController {
   
   // MARK: Properties
   

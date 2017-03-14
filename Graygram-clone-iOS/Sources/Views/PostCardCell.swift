@@ -7,10 +7,9 @@
 //
 
 import UIKit
-
 import Alamofire
 
-class PostCardCell: UICollectionViewCell {
+final class PostCardCell: UICollectionViewCell {
   
   // MARK: Constants
 
