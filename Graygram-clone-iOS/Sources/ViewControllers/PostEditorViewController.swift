@@ -32,6 +32,11 @@ final class PostEditorViewController: UIViewController {
       target: self,
       action: #selector(cancelButtonDidTap)
     )
+    self.navigationItem.rightBarButtonItem = UIBarButtonItem(
+      barButtonSystemItem: .done,
+      target: self,
+      action: #selector(doneButtonDidTap)
+    )
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -88,6 +93,9 @@ final class PostEditorViewController: UIViewController {
     _ = self.navigationController?.popViewController(animated: true)
   }
   
+  func doneButtonDidTap() {
+    print("새 포스트 작성 API 요청")
+  }
 }
 
 
