@@ -36,7 +36,7 @@ final class PostEditorMessageCell: UITableViewCell {
   
   // MARK: Configuring
   
-  func configure(message: String) {
+  func configure(message: String?) {
     self.textView.text = message
     self.setNeedsLayout()
   }
@@ -44,8 +44,8 @@ final class PostEditorMessageCell: UITableViewCell {
   
   // MARK: Size
   
-  class func height(width: CGFloat, message: String) -> CGFloat {
-    let messageHeight = message.size(width: width, font: Font.textView).height
+  class func height(width: CGFloat, message: String?) -> CGFloat {
+    let messageHeight = message?.size(width: width, font: Font.textView).height ?? 0
     let minimumHeight = ceil(Font.textView.lineHeight * 3)
     return max(messageHeight, minimumHeight)
   }
