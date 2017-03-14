@@ -72,7 +72,7 @@ final class PostEditorMessageCell: UITableViewCell {
 extension PostEditorMessageCell: UITextViewDelegate {
   
   func textViewDidChange(_ textView: UITextView) {
-    print(textView)
+    self.textDidChange?(textView.text)
   }
   
 }
