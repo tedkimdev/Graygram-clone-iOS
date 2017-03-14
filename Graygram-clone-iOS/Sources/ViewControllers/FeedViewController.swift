@@ -40,6 +40,10 @@ final class FeedViewController: UIViewController {
     fatalError("init(coder:) has not been implemented")
   }
   
+  deinit {
+    NotificationCenter.default.removeObserver(self)
+  }
+  
   
   // MARK: View Life Cycle
   
@@ -64,6 +68,7 @@ final class FeedViewController: UIViewController {
     
     NotificationCenter.default.addObserver(self, selector: #selector(postDidLike), name: .postDidLike, object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(postDidUnlike), name: .postDidUnlike, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(postDidCreate), name: .postDidCreate, object: nil)
     
     self.collectionView.addSubview(self.refreshControl)
     self.view.addSubview(self.collectionView)
@@ -155,6 +160,12 @@ final class FeedViewController: UIViewController {
         break
       }
     }
+  }
+  
+  func postDidCreate(_ notification: Notification) {
+    guard let post = notification.userInfo?["post"] as? Post else { return }
+    self.posts.insert(post, at: 0)
+    self.collectionView.reloadData()
   }
   
 }
