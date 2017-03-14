@@ -27,6 +27,7 @@
 		BD0FA8501E7810F1001C782E /* UIImage+Grayscaled.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA84F1E7810F1001C782E /* UIImage+Grayscaled.swift */; };
 		BD0FA8521E782E86001C782E /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA8511E782E86001C782E /* PostEditorViewController.swift */; };
 		BD0FA8541E782FF6001C782E /* PostEditorImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA8531E782FF6001C782E /* PostEditorImageCell.swift */; };
+		BD0FA8561E783307001C782E /* PostEditorMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0FA8551E783307001C782E /* PostEditorMessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		BD0FA84F1E7810F1001C782E /* UIImage+Grayscaled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Grayscaled.swift"; sourceTree = "<group>"; };
 		BD0FA8511E782E86001C782E /* PostEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		BD0FA8531E782FF6001C782E /* PostEditorImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostEditorImageCell.swift; sourceTree = "<group>"; };
+		BD0FA8551E783307001C782E /* PostEditorMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostEditorMessageCell.swift; sourceTree = "<group>"; };
 		D26E671987A3E4B4CFE8800A /* Pods-Graygram-clone-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graygram-clone-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Graygram-clone-iOS/Pods-Graygram-clone-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E5134AD788F01C15C39A71A6 /* Pods-Graygram-clone-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Graygram-clone-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Graygram-clone-iOS/Pods-Graygram-clone-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +167,7 @@
 				BD0FA7EB1E753F39001C782E /* PostCardCell.swift */,
 				BD0FA8011E755C51001C782E /* CollectionActivityIndicatorView.swift */,
 				BD0FA8531E782FF6001C782E /* PostEditorImageCell.swift */,
+				BD0FA8551E783307001C782E /* PostEditorMessageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			files = (
 				BD0FA7FE1E754600001C782E /* PhotoSize.swift in Sources */,
 				BD0FA8021E755C51001C782E /* CollectionActivityIndicatorView.swift in Sources */,
+				BD0FA8561E783307001C782E /* PostEditorMessageCell.swift in Sources */,
 				BD0FA7F01E753F39001C782E /* AppDelegate.swift in Sources */,
 				BD0FA8091E756B83001C782E /* SplashViewController.swift in Sources */,
 				BD0FA7F41E753F39001C782E /* PostCardCell.swift in Sources */,
