@@ -16,6 +16,11 @@ final class PostEditorMessageCell: UITableViewCell {
     static let textView = UIFont.systemFont(ofSize: 14)
   }
   
+  
+  // MARK: Properties
+  
+  var textDidChange: ((String?) -> Void)?
+
   // MARK: UI
   
   fileprivate let textView = UITextView()
