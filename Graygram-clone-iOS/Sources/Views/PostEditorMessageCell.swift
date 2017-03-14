@@ -26,4 +26,12 @@ final class PostEditorMessageCell: UITableViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
+  
+  // MARK: Layout
+  
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    self.textView.frame = self.contentView.bounds
+  }
+  
 }
