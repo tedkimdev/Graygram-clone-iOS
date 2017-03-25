@@ -1,5 +1,5 @@
-# Graygram-clone-iOS
-
+Graygram-clone-iOS
+==================
 
 ```
 sudo gem install cocoa pods —verbose
@@ -11,7 +11,8 @@ pod install
 
 
 
-###3rd party libraries
+3rd party libraries
+-------------------
 * CocoaPods: https://github.com/CocoaPods/CocoaPods
 * Alamofire: https://github.com/Alamofire/Alamofire
 * ObjectMapper: https://github.com/Hearst-DD/ObjectMapper
