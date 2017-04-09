@@ -1,6 +1,8 @@
 Graygram-clone-iOS
 ==================
 
+전수열님 Graygram 따라해보기
+
 ```
 sudo gem install cocoa pods —verbose
 pod init
@@ -19,3 +21,9 @@ pod install
 * Kingfisher: https://github.com/onevcat/Kingfisher
 * ManualLayout: https://github.com/isair/ManualLayout (edited)
 * SnapKit
+
+
+
+Ref
+---
+https://github.com/devxoul/graygram-ios
